@@ -1,0 +1,396 @@
+POST http://localhost:4000/api/user/login/
+Content-Type: application/json
+
+{
+    "firstname":"Demo",
+    "lastname":"F R",
+    "email":"nithishfrancis14042004@gmail.com",
+    "mobile":"12345670",
+    "password":"qazwsx"
+}
+
+###
+PUT http://localhost:4000/api/product/wishlist/
+Content-Type: application/json
+
+{
+    "userId":"6565884b7c3fffbe666ae060",
+     "prodId":"656b212cb563e39959ebf688"
+}
+###
+
+POST http://localhost:4000/api/user/login/
+Content-Type: application/json
+
+{
+    "firstname":"Nithish",
+    "lastname":"F R",
+    "email":"nithishfr07@gmail.com",
+    "mobile":"12390890",
+    "password":"qwerty123"
+}
+
+###
+POST http://localhost:4000/api/user/forgot/
+# ###
+
+# DELETE http://localhost:4000/api/user/delete/6560b05e5eb544016fdd8e82
+
+# ###
+# GET http://localhost:4000/api/user/logout/
+
+# ###
+# PUT http://localhost:4000/api/user/update/6560b23e95a026aceb68ce77
+
+# ###
+# GET  http://localhost:4000/api/user/6560b763bc08d936008038a3/
+
+# ###
+# PUT http://localhost:4000/api/user/block/6560ce1642020e81baae1e89
+
+# ###
+# PUT http://localhost:4000/api/user/unblock/6560ce1642020e81baae1e89
+
+
+###
+
+GET  http://localhost:4000/api/user/allusers/
+
+###
+PUT http://localhost:4000/api/user/password/6561b8f1099ac6f4c46770c8/
+Content-Type: application/json
+
+{
+    "password":"Nithish123"
+}
+
+###
+//for product
+
+POST http://localhost:4000/api/product/createProduct/
+Content-Type: application/json
+
+{
+    "brand":"Apple",
+    "category":"Laptop",
+    "description":"Hi",
+    "price":1000,
+    "title":"Nokia",
+    "color":"Black",
+    "quantity":2,
+}
+
+### 
+
+GET http://localhost:4000/api/product/allProducts?price[gt]=100000&price[lte]=200000
+
+### 
+
+GET http://localhost:4000/api/product/allProducts/656312032f77a6fd60c57a7b/
+
+###
+PUT  http://localhost:4000/api/product/update/656312032f77a6fd60c57a7b/
+Content-Type: application/json
+
+{   
+    "title":"Apple Mac",
+    "quantity":3
+}
+
+###
+
+DELETE http://localhost:4000/api/product/delete/656312032f77a6fd60c57a7b
+
+###
+GET http://localhost:4000/api/product/allproducts
+
+###
+POST http://localhost:4000/api/user/forgot/
+Content-Type: application/json
+
+{
+    "firstname":"Demo",
+    "lastname":"F R",
+    "email":"nithishfrancis14042004@gmail.com",
+    "mobile":"12345670",
+    "password":"qwerty123" 
+}
+
+###
+
+PUT http://localhost:4000/api/user/reset-password/51d42f4c0bee98dde17dcc622a8ab7dfaf3e727197a188a45604c81aeaae11ef
+Content-Type: application/json
+
+{
+    "email":"nithishfrancis14042004@gmail.com",
+    "password":"qazwsx" 
+}
+
+###
+
+GET http://localhost:4000/api/blog/allblogs/
+
+###
+
+POST http://localhost:4000/api/blog/create/
+Content-Type: application/json
+
+{
+    "title":"Blog 4",
+    "category":"Mech",
+    "description":"my blog description 4"
+}
+
+###
+PUt http://localhost:4000/api/blog/update/6565a3bb7af7d5e25bf869be
+Content-Type: application/json
+
+{
+    "category":"ECE"
+}
+
+###
+
+GET http://localhost:4000/api/blog/allblogs/6565a338f1541717f4f1d81c
+
+###
+DELETE  http://localhost:4000/api/blog/delete/6565a3bb7af7d5e25bf869be
+
+###
+
+PUT http://localhost:4000/api/blog/likeblog/
+Content-Type: application/json
+
+{
+    "id":"6565a338f1541717f4f1d81c",
+    "userId":"65658176665036fe038ba8d0"
+}
+
+###
+PUT http://localhost:4000/api/blog/dislikeblog/
+Content-Type: application/json
+
+{
+    "id":"6565a338f1541717f4f1d81c",
+    "userId":"65658176665036fe038ba8d0"
+}
+
+###
+POST http://localhost:4000/api/productcategory/createcategory/
+Content-Type: application/json
+
+{
+    "title":"Tv"
+}
+
+###
+GET http://localhost:4000/api/productcategory/allcategory/65689b53c052eeaabe9589da
+
+###
+GET http://localhost:4000/api/productcategory/allcategory/
+
+###
+DELETE http://localhost:4000/api/productcategory/deletecategory/65689b53c052eeaabe9589da/
+
+###
+PUT http://localhost:4000/api/productcategory/updatecategory/65689b53c052eeaabe9589da/
+Content-Type: application/json
+
+{
+    "title":"Tv"
+}
+
+
+###
+POST http://localhost:4000/api/blogcategory/createcategory/
+Content-Type: application/json
+
+{
+    "title":"Watch"
+}
+
+###
+GET http://localhost:4000/api/blogcategory/allcategory/6568a671bb1104b622c31bc6
+
+###
+GET http://localhost:4000/api/blogcategory/allcategory/
+
+###
+DELETE http://localhost:4000/api/blogcategory/deletecategory/65689a43bc7b719eb37905b8/
+
+###
+PUT http://localhost:4000/api/blogcategory/updatecategory/65689a43bc7b719eb37905b8/
+Content-Type: application/json
+
+{
+    "title":"blog Watch"
+}
+
+
+###
+POST http://localhost:4000/api/brand/createcategory/
+Content-Type: application/json
+
+{
+    "title":"Samsung"
+}
+
+###
+GET http://localhost:4000/api/brand/allcategory/6568a8254c127852b123791b
+
+###
+GET http://localhost:4000/api/brand/allcategory/
+
+###
+DELETE http://localhost:4000/api/brand/deletecategory/6568a671bb1104b622c31bc6/
+
+###
+PUT http://localhost:4000/api/brand/updatecategory/6568a85a4c127852b1237921/
+Content-Type: application/json
+
+{
+    "title":"Nokia"
+}
+
+###
+
+PUT http://localhost:4000/api/blog/likeblog/
+Content-Type: application/json
+
+{
+    
+}
+
+###
+PUT http://localhost:4000/api/product/rate/
+Content-Type: application/json
+
+{
+    "id":"65658176665036fe038ba8d0",
+    "star":4,
+    "prodId":"656b212cb563e39959ebf688"
+}
+
+###
+POST http://localhost:4000/api/product/createProduct/
+Content-Type: application/json
+
+{
+    "title":"Apple Mac",
+    "description":"This is Mine",
+    "price":5100,
+    "color":"White",
+    "category":"Laptop",
+    "brand":"Apple",
+    "quantity":2
+}
+
+###
+
+POST http://localhost:4000/api/coupon/create/
+Content-Type: application/json
+
+{
+    "name":"Diwali",
+    "discount":90,
+    "expiry":"12/1/2024"
+}
+
+###
+GET http://localhost:4000/api/coupon/allcoupon/
+
+###
+GET http://localhost:4000/api/coupon/allcoupon/656b29305d10eccd5b7e33d4
+
+###
+PUT http://localhost:4000/api/coupon/update/656b29305d10eccd5b7e33d4
+Content-Type: application/json
+
+{
+    "name":"Pongal"
+}
+
+###
+DELETE http://localhost:4000/api/coupon/delete/656b29305d10eccd5b7e33d4
+
+###
+
+PUT http://localhost:4000/api/product/upload/65658176665036fe038ba8d0
+Content-Disposition: form-data; name="image"; filename="1.png"
+Content-Type: image/png
+
+###
+POST  http://localhost:4000/api/user/adminlogin/
+Content-Type: application/json
+
+{
+    "firstname":"Nithish",
+    "lastname":"F R",
+    "email":"nithishfr07@gmail.com",
+    "mobile":"12390890",
+    "password":"qwerty123"
+}
+
+###
+GET  http://localhost:4000/api/user/wishlist/65658176665036fe038ba8d0
+
+###
+PUT http://localhost:4000/api/user/saveaddress/65658176665036fe038ba8d0
+Content-Type: application/json
+
+{
+    "address":"My address"
+}
+
+###
+POST http://localhost:4000/api/user/cart/65658176665036fe038ba8d0
+Content-Type: application/json
+
+{
+    "cart":[
+        {
+            "id":"656c8b2da0086bb73e991b20",
+            "count":3,
+            "color":"red"
+        },
+        {
+            "id":"656b212cb563e39959ebf688",
+            "count":3,
+            "color":"red"
+        }
+    ]
+}
+
+###
+GET http://localhost:4000/api/user/getcart/65658176665036fe038ba8d0
+
+###
+DELETE http://localhost:4000/api/user/deletecart/65658176665036fe038ba8d0
+
+###
+POST http://localhost:4000/api/user/applycoupon/65658176665036fe038ba8d0
+Content-Type: application/json
+
+{
+    "name":"Diwali"
+}
+
+###
+POST http://localhost:4000/api/user/order/65658176665036fe038ba8d0
+Content-Type: application/json
+
+{ 
+    "COD":true,
+    "couponApplied":true
+}
+
+###
+GET http://localhost:4000/api/user/allorders/65658176665036fe038ba8d0
+
+###
+PUT http://localhost:4000/api/user/updateorder/65658176665036fe038ba8d0
+Content-Type: application/json
+
+{
+    "status":"Delivered"
+}
